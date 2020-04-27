@@ -13,6 +13,7 @@ let clicks = 0;
 
 $map.addEventListener('click', function (eventoClick) {
     clicks++;
+    console.log("Debug -> Click detected!");
     let distance = getDistance(eventoClick, posMapa);
     let distanceHint = getDistanceHint(distance);
     $distance.innerHTML = `<h1>${distanceHint}</h1>`;
